@@ -6,3 +6,7 @@ body{
    display: none;
 
 }
+#AllTask::-webkit-scrollbar{
+   display: none;
+
+}
