@@ -1,11 +1,12 @@
 "use client"
 import React, { useState } from 'react'
 
-const Login = () => {
+const Login = (props) => {
   const[email,setEmail]=useState("");
   const[password,setPassword]=useState("");
   const handler =(e)=>{
     e.preventDefault();
+    props.LoginHandler(email,password);
     console.log("the email is",email)
     console.log("password is ",password)
     setEmail("")
