@@ -16,7 +16,7 @@ This is a web-based Employee Task Management System designed to simplify task as
 - **React**: Front-end library for UI development.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Local Storage**: Browser-based storage for persistent data.
-[![App Platorm](https://doimages.nyc3.cdn.digitaloceanspaces.com/002Blog/0-BLOG-BANNERS/app_platform.png)](https://www.digitalocean.com/products/app-platform)
+[![App Platorm](https://imgur.com/stespvt)
 
 
 
