@@ -16,6 +16,13 @@ This is a web-based Employee Task Management System designed to simplify task as
 - **React**: Front-end library for UI development.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Local Storage**: Browser-based storage for persistent data.
+![Login Page](https://imgur.com/a/jDoJaCX)
+[Admin page](https://imgur.com/K5FAmsI)
+![Emoloyee Page](https://imgur.com/85JpdNm)
+
+
+
+
 
 ## Installation
 
