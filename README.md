@@ -16,7 +16,15 @@ This is a web-based Employee Task Management System designed to simplify task as
 - **React**: Front-end library for UI development.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Local Storage**: Browser-based storage for persistent data.
-[![App Platorm](https://imgur.com/stespvt)
+[![Login Page](https://imgur.com/VK9oJzM)
+[![Employee page](https://imgur.com/amQQqze)
+[![Admin page](https://imgur.com/hC5k9CS)
+
+
+
+
+
+
 
 
 
@@ -27,7 +35,7 @@ Follow these steps to set up the project on your local machine:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/<yupAyush>/Employee-Task-Management-Dashboard.git
+    git clone https://github.com/yupAyush/Employee-Task-Management-Dashboard.git
     cd employee-task-management
     ```
 
