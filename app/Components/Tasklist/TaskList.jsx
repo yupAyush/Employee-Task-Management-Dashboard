@@ -1,39 +1,34 @@
 import React from 'react'
+import AcceptTask from './AcceptTask'
+import NewTask from './NewTask'
+import CompleteTask from './completeTAsk'
+import FailedTask from './FailedTask'
 
-function TaskList() {
+function TaskList({data}){
+  const { tasks } = data
+  console.log(data.tasks)
+ 
   return (
     <div  id='TaskList' className='h-[55%] w-full flex items-centre justify-start gap-5 py-3 mt-10 overflow-auto'>
-        <div className='h-full w-[300px] bg-red-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-          <div className='flex justify-between mt-2 px-2 text-white '>
-            <h3 className='bg-red-500 p-2 rounded-sm'>High</h3>
-            <h3 className='px-1'>Date</h3>
-            
-          </div>
-          <h1 className='text-2xl font-bold text-white mt-4 px-3'>Exercise</h1>
-          <p className='text-sm text-white mt-4 px-3 font-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa assumenda alias non corporis ad expedita officiis inventore error voluptate animi ratione corrupti aliquam eveniet consectetur recusandae porro, tempora libero optio.</p>
-
-        </div>
-        <div className='h-full w-[300px] bg-green-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
-        <div className='h-full w-[300px] bg-blue-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
-        <div className='h-full w-[300px] bg-fuchsia-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
-        <div className='h-full w-[300px] bg-emerald-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
-        <div className='h-full w-[300px] bg-red-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
-        <div className='h-full w-[300px] bg-yellow-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
-        <div className='h-full w-[300px] bg-yellow-400 flex-shrink-0 rounded-xl '> {/* flex-shrink-0 makes it swipeable */}
-
-        </div>
+      {data.tasks.map((e,i)=>{
+        if(e.active){
+          return <AcceptTask data={e} key={i} />
+         }
+        if(e.completed ){
+          return <CompleteTask data={e} key={i}/>
+        }
+        if(e.failed  ){
+          return <FailedTask data={e} key={i}/>
+        }
+        if(e.newTask ){
+          return <NewTask data={e} key={i}/>
+        }
+        
+      }
+       
+      )}
+       
+        
 
     </div>
   )

@@ -1,13 +1,17 @@
 
-import React from 'react'
+"use client"
+import React, { useContext } from 'react'
 import Header from '@/app/others/Header'
 import CreateTask from '@/app/others/CreateTask'
 import AllTask from '@/app/others/AllTask'
 
-function AdminDashboard() {
+
+
+function AdminDashboard(props) {
+  
   return (
     <div>
-        <Header/>
+        <Header changeuser={props.changeuser}/>
         <CreateTask/>
         <AllTask/>
       

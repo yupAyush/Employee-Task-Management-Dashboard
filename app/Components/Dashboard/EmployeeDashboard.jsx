@@ -5,12 +5,13 @@ import TaskList from '../Tasklist/TaskList'
 
 
 
-function EmployeeDashboard() {
+function EmployeeDashboard(props) {
+  console.log(props.data.name)
   return (
     <div className='h-screen' >
-        <Header/>
-        <Tasklistnumbers/>
-        <TaskList/>
+        <Header changeuser={props.changeuser} name={props.data.name}/>
+        <Tasklistnumbers data={props.data}/>
+        <TaskList data={props.data}/>
        
         
       
